@@ -1,4 +1,4 @@
-output=`/usr/sbin/httpd -v 2>&1`
+output=`/usr/sbin/httpd -v`
 
 message=`echo "$output" | grep "$1"`
 if [[ $message == *"$1"* ]]; then
